@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>MusicByJMarie</title>
+        
+        <meta name="viewport" content="width=device-width" initial-scale=1 minimum-scale=1>
+        
+        
+        <link rel="stylesheet" href="css/jquerystructure.css"/>
+        <link rel="stylesheet" href="css/jquery.mobile.css.css"/>
+        <link rel="stylesheet" href="css/jquery.min.css"/>
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.mobile.js"></script>
+	<link rel="stylesheet" href="css/photoswipe.css"/>
+         
+	<script src="js/lib/klass.min.js"></script>
+	<script src="js/photoswipejquery.js"></script>
+        <script src="js/main.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    
+    <body>
+        
+        <div id="home" data-role"page" data-theme="a" data-title="MusicByJMarie: Home">
+            <div data-role="header" data-theme="a" data-id="vs_header">
+                <h1>MusicByJMarie</h1>
+            </div><!--header-->
+            
+            <div data-role="content">
+		<img src="images/piano.jpg" alt="MusicByJMarie" />
+	    </div>
+            
+            <p>Welcome</p>
+            
+            <div data-role="footer" data-theme="a" data-position="fixed" data-id="vs_footer">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#" data-role="button" data-icon="home">Home</a></li>
+                        <li><a href="#bio" data-role="button" data-icon="vs_bio">Bio</a></li>
+                        <li><a href="#videos" data-role="button" data-icon="vs_videos">Videos</a></li>
+                        <li><a href="#photos" data-role="button" data-icon="vs_photos">Photos</a></li>
+                        <li><a href="#contact" data-role="button" data-icon="vs_tweets">Contact</a></li>  
+                    </ul>
+                </div><!--Navbar-->
+            </div><!--Footer-->            
+        </div>
+        
+        
+        
+        <div id="bio" data-role="page" data-theme="a" data-title="MusicByJMarie: Bio">
+            <div data-role="header" data-theme="a" data-id="vs_header">
+                <h1>Biography</h1>
+            </div><!--header-->
+            
+            <p>Bio</p>
+            
+            <div data-role="footer" data-theme="a" data-position="fixed" data-id="vs_footer">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#home" data-role="button" data-icon="home">Home</a></li>
+                        <li><a href="#" data-role="button" data-icon="vs_bio">Bio</a></li>
+                        <li><a href="#videos" data-role="button" data-icon="vs_videos">Videos</a></li>
+                        <li><a href="#photos" data-role="button" data-icon="vs_photos">Photos</a></li>
+                        <li><a href="#contact" data-role="button" data-icon="vs_tweets">Contact</a></li>  
+                    </ul>
+                </div><!--Navbar-->
+            </div><!--Footer-->            
+        </div>
+        
+        <div id="videos" data-role="page" data-theme="a" data-title="MusicByJMarie: Videos">
+            
+            <div data-role="header" data-theme="a" data-id="vs_header">
+                <h1>Videos</h1>
+            </div><!--header-->
+                
+	    <div data-role="content">
+		    <div class="ui-grid-a" id="videolist">
+		    </div><!--grid-->
+	    </div><!--content-->
+		
+            <div data-role="footer" data-theme="a" data-position="fixed" data-id="vs_footer">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#home" data-role="button" data-icon="home">Home</a></li>
+                        <li><a href="#bio" data-role="button" data-icon="vs_bio">Bio</a></li>
+                        <li><a href="#" data-role="button" data-icon="vs_videos">Videos</a></li>
+                        <li><a href="#photos" data-role="button" data-icon="vs_photos">Photos</a></li>
+                        <li><a href="#contact" data-role="button" data-icon="vs_tweets">Contact</a></li>  
+                    </ul>
+                </div><!--Navbar-->
+            </div><!--Footer-->            
+        </div>
+        </div>
+	
+	<div id="videoplayer" data-role="page">
+		<div data-role="header" data-position="fixed" data-theme="a">
+			<a href="#videos"
+				data-transition="fade"
+				data-icon="back"
+				data-iconpos="notext"
+				data-direction="reverse"
+				>Videos</a>
+			<h1>Videos</h1>
+		</div><!-- header -->
+		<div data-role="content">
+			<div id="myplayer"></div>
+		</div><!-- content -->
+	</div><!-- page -->
+        
+        <div id="photos" data-add-back-btn="true" class="gallery-page" data-role="page" data-theme="a" data-title="MusicByJMarie: Photos">
+            <div data-role="header" data-theme="a" data-id="vs_header">
+                <h1>Photos</h1>
+            </div><!--header-->
+            
+            <p>Photos</p>
+            
+	    <div data-role="content">
+		<div class="ui-grid-b" id="photolist">
+			<div class="ui-block-a">
+				<img src="images/1.jpg">
+			</div>
+			<div class="ui-block-b">
+				<img src="images/2.jpg">
+			</div>
+
+		</div>
+	    </div>
+            
+            <div data-role="footer" data-theme="a" data-position="fixed" data-id="vs_footer">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#home" data-role="button" data-icon="home">Home</a></li>
+                        <li><a href="#bio" data-role="button" data-icon="vs_bio">Bio</a></li>
+                        <li><a href="#videos" data-role="button" data-icon="vs_videos">Videos</a></li>
+                        <li><a href="#" data-role="button" data-icon="vs_photos">Photos</a></li>
+                        <li><a href="#contact" data-role="button" data-icon="vs_tweets">Contact</a></li>  
+                    </ul>
+                </div><!--Navbar-->
+            </div><!--Footer-->            
+        </div>           
+       
+        
+        <div id="contact" data-role="page" data-theme="a" data-title="MusicByJMarie: Contact Info">
+            <div data-role="header" data-theme="a" data-id="vs_header">
+                <h1>Contact Info</h1>
+            </div><!--header-->
+            
+            <p>Contact</p>
+            
+             <div data-role="footer" data-theme="a" data-position="fixed" data-id="vs_footer">
+                  <div data-role="navbar">
+                      <ul>
+                          <li><a href="#home" data-role="button" data-icon="home">Home</a></li>
+                          <li><a href="#bio" data-role="button" data-icon="vs_bio">Bio</a></li>
+                          <li><a href="#videos" data-role="button" data-icon="vs_videos">Videos</a></li>
+                          <li><a href="#photos" data-role="button" data-icon="vs_photos">Photos</a></li>
+                          <li><a href="#" data-role="button" data-icon="vs_tweets">Contact</a></li>  
+                      </ul>
+                  </div><!--Navbar-->
+            </div><!--Footer-->            
+        </div>           
+    </div>
+ </body>
+    
+<script src="http://gdata.youtube.com/feeds/users/valentinezgrl/uploads?alt=json-in-script&max-results=30&callback=listVideos" type="text/javascript"></script>
+
+    
+   
+</html>
